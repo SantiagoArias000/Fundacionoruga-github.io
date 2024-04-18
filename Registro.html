@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Fundación Oruga Colombia</title>
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+        .formulario {
+            background-color: #7be67b; 
+            padding: 50px; 
+            border-radius: 15px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            max-width: 600px; 
+            margin: auto; 
+        }
+
+        .contenido {
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+        }
+
+        .formulario form {
+            width: 100%; 
+        }
+    </style>
+</head>
+<body style="background-image: url('https://static.vecteezy.com/system/resources/previews/003/471/376/non_2x/nature-green-background-free-vector.jpg'); background-size: cover; color: black;">
+
+    <div class="Titulo">
+        <h1>Fundación Oruga Colombia</h1>
+    </div>
+    
+    <nav>
+        <ul>
+            <li><a href="Inicio">Inicio</a></li>
+            <li><a href="Acerca de">Acerca de</a></li>
+            <li><a href="Donacion.html">Donación</a></li> 
+            <li><a href="Registro.html">Registro</a></li> 
+            <li><a href="Contacto">Contacto</a></li>
+            <li><a href="Acceso.html">Acceso</a></li>
+        </ul>
+    </nav>
+
+    <div class="contenido">
+        <div class="formulario">
+            <h2>Registro</h2>
+            <form action="procesar_registro.php" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono"><br><br>
+                <input type="submit" value="Registrar">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+
